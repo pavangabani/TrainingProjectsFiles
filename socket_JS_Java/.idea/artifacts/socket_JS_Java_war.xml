@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="socket_JS_Java:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="socket_JS_Java.war">
+      <element id="artifact" artifact-name="socket_JS_Java:war exploded" />
+    </root>
+  </artifact>
+</component>

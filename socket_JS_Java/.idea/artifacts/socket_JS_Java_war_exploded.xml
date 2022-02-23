@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="socket_JS_Java:war exploded">
+    <output-path>$PROJECT_DIR$/target/socket_JS_Java</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="socket_JS_Java" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/socket_JS_Java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="socket_JS_Java/web/Web" />
+    </root>
+  </artifact>
+</component>
