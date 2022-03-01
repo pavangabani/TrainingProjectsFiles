@@ -22,6 +22,11 @@ public class EmpBean {
         this.name = name;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "EmpBean{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
