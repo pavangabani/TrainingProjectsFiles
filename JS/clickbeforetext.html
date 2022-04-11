@@ -1,0 +1,14 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div>
+        <p id="after"></p>
+    </div>
+    <p id="pavan">hi</p>
+    <script>
+        $("div").on("click","#after",function(){
+            $("#pavan").hide()
+        });
+        $("#after").html("Hello World");
+        
+    </script>
+</html>

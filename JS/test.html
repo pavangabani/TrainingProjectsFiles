@@ -1,0 +1,17 @@
+
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div>hi</div>
+    <script>
+        function callback(){
+            $("div").click(function(){
+            $("div").hide();
+        });
+        };
+        $("div").click(function(){
+            $("div").html("<p>hello</p>");
+            callback();
+        });
+        
+    </script>
+</html>

@@ -1,0 +1,26 @@
+
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <p>Hi first Line</p>
+    <div class="op"></div>
+    <div class="as"></div>
+
+    <div><p id="while">hi</p></div>
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                $("div.op").html("<p>after time out</p>");
+            },5000);
+            setTimeout(function(){
+                $("div.as").html("<p>after time out2</p>");
+            },5000);
+        });
+        console.log($("div").eq(1));
+        $("#while").click(function(){
+            for(let i=0;i<100;i++){
+            $("#while").append(i+"<br>");
+        }
+        });
+       
+    </script>
+</html>

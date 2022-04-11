@@ -1,0 +1,64 @@
+
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#f").hide();
+        });
+        function editf(that){
+            $("#f").show();
+            var a=$(that).parent().prev().prev().text();
+            var b=$(that).parent().prev().text();
+            var index=$(that).parent().parent().index();
+            $('#fid').val(a);
+            $('#fname').val(b);
+            $('#rawid').val(index);
+        }
+        function update(){
+            $("#f").hide();
+
+            var ua=$('#fid').val();
+            var ub=$('#fname').val();
+            var index=$('#rawid').val();
+
+            var tableraw=$("tr").eq(index);
+
+            var newdata="<tr><td>"+ua+"</td><td>"+ub+"</td></tr>";
+            $(tableraw).replaceWith(newdata);
+
+        }
+    </script>
+    <table id="data">
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>operation</td>
+        </tr>
+        <tr>
+            <td id="id">1</td>
+            <td id="name">pavan</td>
+            <td><button onclick='editf(this)'>edit</button></td>
+        </tr>
+        <tr>
+            <td id="id">1</td>
+            <td id="name">pavan</td>
+            <td><button onclick='editf(this)'>edit</button></td>
+        </tr>
+        <tr>
+            <td id="id">1</td>
+            <td id="name">pavan</td>
+            <td><button onclick='editf(this)'>edit</button></td>
+        </tr>
+        <tr>
+            <td id="id">2</td>
+            <td id="name">smit</td>
+            <td><button onclick='editf(this)'>edit</button></td>
+        </tr>
+    </table>
+    <div id="f">
+        ID: <input type="text"  id="fid">
+        Name: <input type="text" id="fname">
+        <p id="rawid" style="visibility: hidden;"></p>
+        <button onclick="update()">update</button>
+    </div>
+</html>
