@@ -9,6 +9,7 @@ public class ServerEndPointDemo {
     public void handleOpen(){
         System.out.println("client is now connected");
     }
+
     @OnMessage
     public String handleMessage(String message){
         System.out.println("receive from client:"+message);

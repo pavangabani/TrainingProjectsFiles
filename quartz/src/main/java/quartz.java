@@ -12,6 +12,7 @@ public class quartz {
                     .usingJobData("jobSays","Hello World")
                     .usingJobData("myFloatValue","3.14f")
                     .build();
+
             Trigger trigger=TriggerBuilder.newTrigger()
                     .withIdentity("myTrigger","grou1")
                     .startNow()
